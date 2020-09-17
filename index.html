@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ex-dischi-musicali</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,6 +15,16 @@
                 <img src="logo.png" alt="logo" />
             </div>
         </header>
+
+        <div class="select_cont">
+          <select id="slct_music" name="Select Music">
+            <option value="0">All</option>
+            <option value="1">Metal</option>
+            <option value="2">Rock</option>
+            <option value="3">Jazz</option>
+            <option value="4">Pop</option>
+          </select>
+        </div>
 
         <div class="cds-container container">
             <!-- Disco ad esempio -->

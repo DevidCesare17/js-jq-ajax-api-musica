@@ -33,6 +33,11 @@ header img {
     flex-wrap: wrap;
     padding: 100px 0;
 }
+.select_cont{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 .cd {
     display: flex;
@@ -42,7 +47,7 @@ header img {
     flex-basis: 200px;
     padding: 20px;
     margin: 10px 20px;
-    height: 360px;
+    height: 375px;
     background: rgb(46, 58, 70);
     text-align: center;
 }
@@ -70,4 +75,39 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  header{
+    height: 100px;
+  }
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  .cds-container{
+    padding: 20px;
+  }
+  .cd{
+    flex-basis: 250px;
+  }
+  .cd h3{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .container{
+    width: 100%;
+    padding: 20px;
+  }
+  .cds-container{
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container{
+    width: 100%;
 }
