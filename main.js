@@ -14,21 +14,7 @@ $(document).ready(function() {
     }
   );
 
-  // var selectMusic = $("#slct_music option");
-  // selectMusic.click(function(){
-  //   var value = $(this).attr("value");
-  //   if (value == "0") {
-  //     console.log("All");
-  //   } else if (value == "1") {
-  //     console.log("Metal");
-  //   } else if (value == "2") {
-  //     console.log("Rock");
-  //   } else if (value == "3") {
-  //     console.log("Jazz");
-  //   } else if (value == "4") {
-  //     console.log("Pop");
-  //   }
-  // });
+  selectMusic();
 
 });
 
@@ -42,4 +28,18 @@ function renderMusic(mscLst) {
 
     $(".cds-container").append(visual);
   }
+}
+
+function selectMusic() {
+  $("#slct_music").change(
+    function(){
+      var valueSelect = $(this).val();
+      if (valueSelect == "0") {
+        $(".cd").show();
+      } else {
+        $(".cd").hide();
+        $(".cd[data-genere='"+valueSelect+"']").show();
+      }
+    }
+  );
 }

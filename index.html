@@ -19,10 +19,10 @@
         <div class="select_cont">
           <select id="slct_music" name="Select Music">
             <option value="0">All</option>
-            <option value="1">Metal</option>
-            <option value="2">Rock</option>
-            <option value="3">Jazz</option>
-            <option value="4">Pop</option>
+            <option value="Metal">Metal</option>
+            <option value="Rock">Rock</option>
+            <option value="Jazz">Jazz</option>
+            <option value="Pop">Pop</option>
           </select>
         </div>
 
@@ -32,7 +32,7 @@
         </div>
 
         <script id="div_music_cd" type="text/x-handlebars-template">
-          <div class="cd">
+          <div class="cd" data-genere="{{genre}}">
             <img src="{{poster}}" alt="">
             <h3>{{title}}</h3>
             <span class="author">{{author}}</span>
